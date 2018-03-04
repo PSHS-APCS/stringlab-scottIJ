@@ -36,7 +36,7 @@ class FullName
 	public String lastNameFirst()
 	{
 		String n = name;
-		int index = n.indexOf(" ");
+		int index = n.lastIndexOf(" ");
 		String lastName = n.substring(index);
 		String firstName = n.substring(0, index);
 		return lastName + ", " + firstName;
@@ -48,4 +48,3 @@ class FullName
 
 	}
 }
-
